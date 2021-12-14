@@ -7,7 +7,7 @@
         "prepare": "husky install",
         "start": "next start -p 5000",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.{js,jsx,ts,tsx}\" --write",
-        "lint": "eslint \"**/*.{js,jsx,ts,tsx}\""
+        "lint": "next lint"
     },
     "dependencies": {
         "next": "12.0.7",
