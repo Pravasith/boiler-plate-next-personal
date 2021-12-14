@@ -20,7 +20,7 @@
         "paths": {
             "@/components/*": ["components/*"],
             "@/pages/*": ["pages/*"],
-            "@/styles/*": ["styles/*"]
+            "@styles/*": ["styles/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

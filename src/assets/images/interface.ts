@@ -1,3 +1,3 @@
-export type svgColor = {
+export type SvgProps = {
     color: string;
 };
