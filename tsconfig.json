@@ -18,9 +18,10 @@
         // Shorten import paths
         "baseUrl": "./src",
         "paths": {
-            "@/components/*": ["components/*"],
-            "@/pages/*": ["pages/*"],
-            "@styles/*": ["styles/*"]
+            "@components/*": ["components/*"],
+            "@pages/*": ["pages/*"],
+            "@styles/*": ["styles/*"],
+            "@assets/*": ["assets/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
