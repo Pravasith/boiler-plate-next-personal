@@ -1,0 +1,56 @@
+@import "../vars";
+
+.loadingContainer {
+    width: 100%;
+    height: 100vh;
+    // z-index: 5;
+
+    position: absolute;
+
+    background: $pureWhite;
+}
+
+.apiCall {
+    width: 100%;
+    height: 100%;
+
+    // margin: 0 1em;
+}
+
+.loadingDot {
+    min-width: 1em;
+    min-height: 1em;
+    background: $pureWhite;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0em);
+    }
+    40% {
+        transform: translateY(-1em);
+    }
+    80% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+.blueX {
+    background: $blue;
+    animation: jump 1s ease-in-out 0.25s infinite;
+}
+
+.pinkX {
+    background: $magenta;
+    animation: jump 1s ease-in-out 0.5s infinite;
+}
+
+.yellowX {
+    background: $yellow;
+    animation: jump 1s ease-in-out 0.75s infinite;
+}

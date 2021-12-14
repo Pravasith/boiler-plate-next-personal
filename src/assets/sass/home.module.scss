@@ -1,0 +1,658 @@
+@import "./vars";
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: $lightestGray;
+    position: absolute;
+
+    .bgdContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bgdTexts {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .innerContent {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .anchorDiv {
+        width: 100%;
+        height: 100%;
+        // background: $lightestGray;
+        // height: inherit;
+        // left: 50%;
+        // top: 45%;
+    }
+
+    .illustrationBgd {
+        width: 10em;
+        // left: 41%;
+        // top: -1.725%;
+
+        // opacity: 0;
+    }
+
+    .threeCanvas {
+        width: 30em;
+        height: 30em;
+        left: auto;
+        right: -30%;
+        top: auto;
+        bottom: -16%;
+    }
+
+    .homeTrailWrap {
+        // transform: translateX(100%);
+        // width: 37em;
+        // left: auto;
+        // top: 7.7vh;
+        // right: 68%;
+
+        transform: translateX(100%);
+        width: 37em;
+        left: auto;
+        top: auto;
+        right: 68%;
+        bottom: 17em;
+    }
+
+    #homeTrail {
+        path {
+            stroke-width: 5;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            // opacity: 0;
+        }
+    }
+
+    .pravasPicWrap {
+        // transform-origin: 50% 50%;
+        width: 13.5em;
+        left: 48.85vw;
+        top: 41.75vh;
+    }
+
+    .moveMouse {
+        // width: 4em;
+        // left: 68%;
+        // top: 36%;
+
+        // opacity: 0;
+
+        width: 4em;
+        left: auto;
+        top: auto;
+        // opacity: 0;
+        bottom: 10em;
+        right: 0em;
+    }
+
+    .moveMouseText {
+        left: 115%;
+        width: 6em;
+        top: 0;
+    }
+
+    .trail1,
+    .trail2,
+    .trailMobile {
+        width: 0.2em;
+
+        // left: auto;
+        // right: 67.5%;
+        left: 0.15em;
+    }
+
+    .trailMobile {
+        width: 19em;
+        top: -11.5em;
+        left: 24.8em;
+
+        display: none;
+    }
+
+    .trail1 {
+        top: 19.25em;
+    }
+
+    .trail2 {
+        top: 28em;
+    }
+
+    .yellowBallPen {
+        // left: 8.25em;
+        // top: -1.7em;
+        width: 5.2em;
+        height: 5.2em;
+        background: $yellow;
+        border-radius: 50%;
+
+        // opacity : 0;
+
+        left: 82%;
+        transform: translateY(-32%);
+    }
+
+    .stringCheese {
+        // opacity: 0;
+
+        // width: 3em;
+        // top: 59%;
+        // left: 51%;
+
+        width: 3em;
+        top: 80%;
+        left: 47%;
+    }
+
+    .introText1 {
+        left: -2em;
+        top: 16em;
+    }
+
+    .introText2 {
+        left: -2em;
+        top: 22.5em;
+
+        h2 {
+            font-family: $font1;
+        }
+    }
+
+    .text2 {
+        width: 10em;
+        // opacity: 0;
+        // top: -1em;
+    }
+
+    .iDesign {
+        // width: max-content;
+        // opacity: 0;
+        color: $darkerGray;
+    }
+
+    .andCode {
+        // opacity: 0;
+    }
+
+    .textInnerWrap {
+        // width: max-content;
+        width: 10em;
+        top: -0.5em;
+    }
+
+    .hiThere {
+        color: $darkerGray;
+        // opacity: 0;
+    }
+
+    .iAmPravas {
+        color: $darkerGray;
+        // opacity: 0;
+    }
+
+    .penIcon {
+        width: 1.8em;
+        left: 10em;
+        top: -0.1em;
+        // opacity: 0;
+    }
+
+    .scrollAnim {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: 1em;
+        // opacity: 0;
+
+        .scrollInner {
+            width: 10%;
+        }
+
+        .scrollText {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// .blueBallHolder{
+//     width: 4em;
+//     top: -6.3em;
+//     left: 3.6em;
+//     opacity: 0;
+// }
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .container {
+        .homeTrailWrap {
+            width: 32em;
+            right: 150%;
+            bottom: 10em;
+        }
+
+        .trailMobile {
+            display: block;
+        }
+
+        .trail2 {
+            display: none;
+        }
+
+        .introText1 {
+            // left: 23em;
+            left: 21em;
+            top: 1.5em;
+        }
+
+        .introText2 {
+            // left: 23em;
+            left: 21em;
+            top: 7em;
+        }
+
+        .trail1,
+        .trail2 {
+            width: 0.15em;
+            left: 24.8em;
+        }
+
+        .trail1 {
+            top: 4.7em;
+        }
+
+        .trail2 {
+            top: -12.5em;
+        }
+
+        .textInnerWrap {
+            width: 15em;
+        }
+
+        .penIcon {
+            width: 2em;
+            left: 9.8em;
+            top: -0.3em;
+        }
+
+        .yellowBallPen {
+            width: 5.5em;
+            height: 5.5em;
+            left: 54%;
+            transform: translateY(-36%);
+        }
+
+        .stringCheese {
+            width: 4em;
+            top: 80%;
+            left: 43%;
+        }
+
+        .threeCanvas {
+            width: 30em;
+            height: 30em;
+            left: auto;
+            right: -34%;
+            top: auto;
+            bottom: -18.5%;
+        }
+
+        .moveMouse {
+            width: 6em;
+            left: auto;
+            top: auto;
+            // opacity: 0;
+            bottom: 18em;
+            right: 0em;
+
+            display: none;
+        }
+
+        .scrollAnim {
+            .scrollInner {
+                // width: 10em;
+                // margin-bottom: 3em;
+                width: 7em;
+                margin-bottom: 1em;
+            }
+        }
+
+        .moveMouseText {
+            width: 11em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        .homeTrailWrap {
+            // right: 114%;
+            width: 49em;
+            right: 126%;
+        }
+
+        // .text2{
+        //     width: 12em;
+        // }
+
+        .introText1 {
+            left: 35em;
+            top: 1.5em;
+        }
+
+        .introText2 {
+            left: 35em;
+            top: 7em;
+        }
+
+        .textInnerWrap {
+            width: 15em;
+        }
+
+        .penIcon {
+            width: 2.2em;
+            left: 10.5em;
+            top: 2.3em;
+        }
+
+        .yellowBallPen {
+            width: 6.5em;
+            height: 6.5em;
+            left: 56%;
+            transform: translateY(2%);
+        }
+
+        .stringCheese {
+            width: 5em;
+            top: 80%;
+            left: 43%;
+        }
+
+        .threeCanvas {
+            // width: 55em;
+            // height: 55em;
+
+            // left: auto;
+            // right: -36%;
+            // top: auto;
+            // bottom: -20%;
+
+            width: 50em;
+            height: 50em;
+            left: auto;
+            right: -41%;
+            top: auto;
+            bottom: -21.5%;
+        }
+
+        .trail1,
+        .trail2 {
+            // width: 0.3em;
+            // left: 45.15em;
+            width: 0.25em;
+            // left: 44.5em;
+            left: 38em;
+        }
+
+        .trail1 {
+            // top: 2.25em;
+            top: 5.5em;
+        }
+
+        .trail2 {
+            // top: 2.25em;
+            top: -26.75em;
+            display: none;
+        }
+
+        .moveMouse {
+            width: 6em;
+            left: auto;
+            top: auto;
+            // opacity: 0;
+            bottom: 18em;
+            right: 0em;
+
+            display: none;
+        }
+
+        .container {
+            .scrollInner {
+                width: 10em;
+                margin-bottom: 3em;
+            }
+        }
+
+        .moveMouseText {
+            width: 11em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .container {
+        .homeTrailWrap {
+            // // width: 54em;
+            // // right: 114%;
+            // // width: 58em;
+            // // top: 30vh;
+
+            // right: 117%;
+            // width: 58em;
+            // // top: 10em;
+            // top: 21em;
+
+            right: 116%;
+            width: 58em;
+        }
+
+        .text2 {
+            width: 12em;
+        }
+
+        .introText1 {
+            // left: 74%;
+            // top: 10%;
+
+            // left: 43em;
+            // top: -2em;
+
+            left: 43em;
+            // top: -2.5em;
+            top: -0.5em;
+        }
+
+        .introText2 {
+            left: 43em;
+            // top: 6em;
+            top: 9em;
+        }
+
+        .trail1,
+        .trail2 {
+            // width: 0.3em;
+            // left: 45.15em;
+            width: 0.25em;
+            left: 44.5em;
+        }
+
+        .trail1 {
+            // top: 2.25em;
+            top: 4.25em;
+        }
+
+        .trail2 {
+            top: -20.75em;
+            max-height: 17em;
+            overflow-y: hidden;
+        }
+
+        .textInnerWrap {
+            width: 15em;
+        }
+
+        .penIcon {
+            width: 3em;
+            left: 12.5em;
+            // top: 2.75em;
+            top: 2.5em;
+        }
+
+        .yellowBallPen {
+            width: 8.2em;
+            height: 8.2em;
+            left: 65%;
+
+            transform: translateY(0);
+        }
+
+        .stringCheese {
+            width: 7em;
+            top: 80%;
+            left: 43%;
+        }
+
+        .threeCanvas {
+            width: 55em;
+            height: 55em;
+
+            left: auto;
+            right: -36%;
+            top: auto;
+            bottom: -20%;
+        }
+
+        .moveMouse {
+            width: 6em;
+            left: auto;
+            top: auto;
+            // opacity: 0;
+            bottom: 18em;
+            right: 0em;
+        }
+
+        .container {
+            .scrollInner {
+                width: 10em;
+                margin-bottom: 3em;
+            }
+        }
+
+        .moveMouseText {
+            width: 11em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+    .container {
+        .homeTrailWrap {
+            width: 40em;
+            bottom: 12em;
+            // left: auto;
+            // top: 10.76vh;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    .container {
+        .homeTrailWrap {
+            width: 40em;
+            bottom: 10em;
+            // left: auto;
+            // top: 10.76vh;
+        }
+    }
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .container {
+        .homeTrailWrap {
+            width: 59em;
+            right: 71%;
+        }
+
+        .trail1,
+        .trail2 {
+            width: 0.3em;
+            // right: 70.55%;
+        }
+
+        .trail1 {
+            top: 27.25em;
+        }
+
+        .trail2 {
+            top: 39em;
+        }
+
+        .introText1 {
+            // left: 26.5%;
+            // top: 43%;
+
+            left: -2em;
+            top: 22.25em;
+        }
+
+        .introText2 {
+            // left: 26.5%;
+            left: -2em;
+            top: 31.5em;
+        }
+
+        .textInnerWrap {
+            width: 20em;
+        }
+
+        .text2 {
+            width: 18em;
+        }
+
+        .penIcon {
+            width: 3.2em;
+            left: 17em;
+        }
+
+        .yellowBallPen {
+            width: 9.2em;
+            height: 9.2em;
+            left: 70%;
+        }
+
+        .stringCheese {
+            width: 5.2em;
+        }
+
+        .threeCanvas {
+            width: 52.5em;
+            height: 52.5em;
+
+            right: -33%;
+            bottom: -18.5%;
+        }
+
+        .moveMouseText {
+            width: 10em;
+        }
+
+        .moveMouse {
+            width: 7em;
+            bottom: 20em;
+        }
+    }
+}

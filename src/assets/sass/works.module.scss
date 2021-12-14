@@ -1,0 +1,828 @@
+@import "./vars";
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: $pureWhite;
+    // background: red;
+    position: absolute;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.bgdContent {
+    width: 100%;
+    height: 100%;
+}
+
+.bgdTexts {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    // overflow: auto;
+    // overflow-y: scroll;
+}
+
+.innerContent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // overflow: auto;
+    // overflow-y: scroll;
+    // background: yellow;
+}
+
+.workContent {
+    width: 100%;
+    height: 100vh;
+}
+
+.workInnerContent {
+    width: 100%;
+    height: 100%;
+}
+
+.leftWrap,
+.midWrap,
+.rightWrap {
+    width: 100%;
+    // background: yellow;
+    height: 100%;
+}
+
+.leftWrap {
+    width: 10%;
+    // order: 1;
+
+    padding: 10% 0;
+
+    z-index: 1;
+
+    // background: purple;
+}
+
+.parentWrap {
+    width: 90%;
+    height: 100%;
+
+    padding: 10% 0;
+}
+
+.midWrap {
+    width: 45%;
+    order: 2;
+    // background: $pureWhite;
+    // z-index: 1;
+}
+
+.rightWrap {
+    width: 55%;
+    order: 1;
+    // background: yellow;
+}
+
+.projectSNo {
+    width: 100%;
+    height: 100%;
+    background: $lightestGray;
+    // padding-right: 10%;
+}
+
+// .justPaddingRight{
+//     width: 10%;
+//     height: 100%;
+//     background: $lightestGray;
+//     z-index: 1;
+// }
+
+.serialNo {
+    // width: 75%;
+    // padding-top: 22%;
+    padding-top: 41%;
+    // width: 96%;
+    // height: 35%;
+    width: 81%;
+    height: 40%;
+    width: 6.25em;
+
+    .slash {
+        // width: 44%;
+        // right: 22.5%;
+
+        width: 48%;
+        right: 13.5%;
+    }
+}
+
+.letters {
+    width: 100%;
+}
+
+.letterWrap {
+    width: 90%;
+}
+
+.lettersBgd {
+    width: 100%;
+    // width: 92%;
+}
+
+.currentSlide {
+    // font-size: 3.6em;
+    font-size: 360%;
+}
+
+.totalSlides {
+    font-size: 1.3em;
+    /* line-height: 0.5em; */
+    position: absolute;
+    /* bottom: -35%; */
+    bottom: -26%;
+    left: 2.2em;
+}
+
+.projectTags {
+    width: 100%;
+    height: 60%;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.projectTypeWrap {
+    width: 8em;
+    height: 0.5em;
+    margin: 1.5em 0;
+    // z-index: 1;
+
+    .projectTypeBgd {
+        width: 100%;
+        height: 100%;
+        transform-origin: 20% 50%;
+        transform: rotateZ(-3deg);
+        margin-top: 2.25em;
+    }
+
+    .projectTypeText {
+        left: 1.2em;
+        bottom: 0.2em;
+        top: auto;
+
+        p {
+            // font-size: 0.75em;
+            font-size: 0.67em;
+        }
+    }
+}
+
+.projectDetails {
+    // width: 100%;
+    height: 100%;
+    // padding-top: 8%;
+    width: 75%;
+    padding-top: 15%;
+}
+
+.projectTitle {
+    width: 100%;
+}
+
+.projectDescription {
+    margin-top: 1.2em;
+    width: 100%;
+    padding-right: 10%;
+
+    p {
+        color: $darkGray;
+        font-size: 0.9em;
+    }
+}
+
+.actionButton {
+    cursor: pointer;
+    margin-top: 1.2em;
+
+    h2 {
+        color: $darkestGray;
+        font-size: 1.4em;
+        // padding-top: 0.2em;
+        padding-top: 0.35em;
+    }
+
+    &:hover {
+        .actionButtonImage {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.actionButtonWrap {
+    // width: ;
+}
+
+.actionButtonImage {
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    margin-left: 0.6em;
+    background: $yellow;
+    border-radius: 50%;
+
+    transition: 0.2s ease-out;
+}
+
+.iconWrap {
+    width: 45%;
+    height: 82%;
+    margin-left: 0.2em;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    background: $lightestGray;
+
+    .imageWrap {
+        // width: 55%;
+        // height: 94%;
+        // width: 95%;
+        // height: 95%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .imgCover {
+        width: 100%;
+        height: 100%;
+        background: $yellow;
+        // transform: scaleX(0);
+        width: 0%;
+
+        transform-origin: 100% 50%;
+    }
+}
+
+// .anchorDiv{
+//     // width: 8%;
+//     width: 5em;
+//     height: inherit;
+//     left: 50%;
+//     top: 45%;
+//     // background: yellow;
+
+//     .trail1L{
+//         // left: -460%;
+//         left: -300%;
+//         top: -57%;
+//     }
+
+//     .trail1R{
+//         left: 259%;
+//         // top: 31%;
+//         top: 33%;
+//     }
+// }
+
+.innerContent {
+    .trail1L,
+    .trail1R {
+        // width: 0.165em;
+        // width: 0.17em;
+        width: 0.2em;
+    }
+
+    .trail1L {
+        left: 22%;
+        top: -10%;
+    }
+
+    .trail1R {
+        right: 36%;
+        bottom: -10%;
+
+        top: auto;
+        left: auto;
+    }
+}
+
+.scrollAnim {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 1em;
+    // opacity: 0;
+
+    .scrollInner {
+        width: 10%;
+    }
+
+    .scrollText {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .container {
+        .leftWrap {
+            width: 27%;
+            position: absolute;
+            // right: 1em;
+            right: 0;
+            // top: 11%;
+            top: 28%;
+            height: 20em;
+            // margin-left: 1em;
+        }
+
+        .parentWrap {
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .rightWrap,
+        .midWrap {
+            width: 100%;
+
+            height: 40%;
+        }
+
+        .rightWrap {
+            margin-top: 4em;
+        }
+
+        .projectTypeWrap {
+            width: 10em;
+            height: 0.5em;
+            margin: 1.5em 0;
+            /* z-index: 1; */
+            transform: translateX(-17%);
+        }
+
+        .serialNo {
+            height: 10em;
+            padding: 2em 0;
+        }
+
+        .projectTypeText {
+            width: 60%;
+            p {
+                text-align: center;
+            }
+        }
+
+        .trail1L {
+            top: -19%;
+            left: 22%;
+        }
+
+        .trail1R {
+            bottom: -14%;
+            left: 22%;
+        }
+
+        .projectDetails {
+            padding-top: 2em;
+
+            width: 85%;
+        }
+
+        .projectDescription {
+            display: none;
+        }
+
+        .scrollInner {
+            // width: 10em;
+            // margin-bottom: 3em;
+            width: 7em;
+            margin-bottom: 1em;
+        }
+
+        .actionButton {
+            margin: 1em 0;
+
+            h2 {
+                font-family: "Noe Display Bold", serif;
+                font-size: 2.25em;
+                line-height: 0.9em;
+            }
+        }
+
+        .actionButtonWrap {
+            width: 12.5em;
+        }
+
+        .actionButtonImage {
+            min-height: 5em;
+            min-width: 5em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        .leftWrap {
+            width: 15%;
+            position: absolute;
+            right: 0;
+            top: 1.8%;
+            height: 35.25em;
+        }
+
+        .parentWrap {
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .rightWrap,
+        .midWrap {
+            width: 100%;
+
+            height: 40%;
+        }
+
+        .rightWrap {
+            margin-top: 6em;
+        }
+
+        .projectTypeWrap {
+            width: 10em;
+            height: 0.5em;
+            margin: 1.5em 0;
+            /* z-index: 1; */
+            transform: translateX(-17%);
+        }
+
+        .serialNo {
+            height: 10em;
+            padding: 2em 0;
+        }
+
+        .projectTypeText {
+            width: 60%;
+            p {
+                text-align: center;
+            }
+        }
+
+        .trail1L {
+            top: 0%;
+            left: 19%;
+        }
+
+        .trail1R {
+            bottom: -11%;
+            left: 19%;
+        }
+
+        .projectDetails {
+            padding-top: 3em;
+
+            width: 85%;
+        }
+
+        .projectDescription {
+            // display: none;
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .scrollInner {
+            // width: 10em;
+            // margin-bottom: 3em;
+            width: 7em;
+            margin-bottom: 1em;
+        }
+
+        .actionButton {
+            margin: 2em 0;
+
+            h2 {
+                font-family: "Noe Display Bold", serif;
+                font-size: 3em;
+                line-height: 0.9em;
+            }
+        }
+
+        .actionButtonWrap {
+            width: 17.5em;
+        }
+
+        .actionButtonImage {
+            min-height: 7em;
+            min-width: 7em;
+            padding: 1em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .container {
+        .leftWrap {
+            width: 17%;
+            position: absolute;
+            right: 0;
+            // top: -0.7%;
+            // height: 55.2%;
+            top: 1.4%;
+            height: 56%;
+        }
+
+        .parentWrap {
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .rightWrap,
+        .midWrap {
+            width: 100%;
+
+            height: 40%;
+        }
+
+        .rightWrap {
+            // margin-top: 6em;
+            margin-top: 8em;
+        }
+
+        .projectTypeWrap {
+            width: 10em;
+            height: 0.5em;
+            margin: 1.5em 0;
+            /* z-index: 1; */
+            transform: translateX(-17%);
+        }
+
+        .projectTypeBgd {
+            margin-top: 4.25em;
+        }
+
+        .serialNo {
+            height: 14em;
+            padding: 4em 0;
+        }
+
+        .projectTypeText {
+            // width: 60%;
+            width: 90%;
+            p {
+                text-align: center;
+                font-size: 1.25em;
+            }
+        }
+
+        .trail1L {
+            top: 0%;
+            width: 0.3em;
+            left: 19%;
+        }
+
+        .trail1R {
+            bottom: -11%;
+            width: 0.3em;
+            left: 19%;
+        }
+
+        .projectDetails {
+            padding-top: 4em;
+
+            width: 85%;
+        }
+
+        .projectDescription {
+            margin-top: 2em;
+            // display: none;
+            p {
+                font-size: 1.8em;
+            }
+        }
+
+        .scrollInner {
+            // width: 10em;
+            // margin-bottom: 3em;
+            width: 7em;
+            margin-bottom: 1em;
+        }
+
+        .actionButton {
+            margin: 2em 0;
+
+            h2 {
+                font-family: "Noe Display Bold", serif;
+                // font-size: 3em;
+                font-size: 4.5em;
+                line-height: 0.9em;
+            }
+        }
+
+        .actionButtonWrap {
+            width: 22.5em;
+        }
+
+        .actionButtonImage {
+            min-height: 8em;
+            min-width: 8em;
+            padding: 1em;
+        }
+
+        .lettersBgd {
+            width: 128%;
+            // background: yellow;
+        }
+
+        .letterWrap {
+            width: 150%;
+        }
+
+        .slash {
+            width: 62%;
+            right: 20.5%;
+        }
+
+        .totalSlides {
+            font-size: 2.2em;
+            position: absolute;
+            bottom: -1.1em;
+            left: 2.25em;
+        }
+
+        .currentSlide {
+            font-size: 5.8em;
+            line-height: 0.85em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+    .projectDescription {
+        p {
+            font-size: 1.1em;
+            line-height: 1em;
+        }
+    }
+
+    .actionButton {
+        margin: 2em 0;
+
+        h2 {
+            font-family: "Noe Display Bold", serif;
+            font-size: 2.25em;
+            line-height: 0.9em;
+        }
+    }
+
+    .actionButtonWrap {
+        width: 14em;
+    }
+
+    .actionButtonImage {
+        min-height: 5.5em;
+        min-width: 5.5em;
+        padding: 1em;
+    }
+
+    .innerContent {
+        .trail1R {
+            right: 30%;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    .actionButton {
+        margin: 2em 0;
+
+        h2 {
+            font-family: "Noe Display Bold", serif;
+            font-size: 2.25em;
+            line-height: 0.9em;
+        }
+    }
+
+    .actionButtonWrap {
+        width: 14em;
+    }
+
+    .actionButtonImage {
+        min-height: 5.5em;
+        min-width: 5.5em;
+        padding: 1em;
+    }
+
+    .innerContent {
+        .trail1R {
+            right: 30%;
+        }
+    }
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .container {
+        .innerContent {
+            .trail1L,
+            .trail1R {
+                width: 0.3em;
+            }
+
+            .trail1R {
+                right: 31%;
+            }
+        }
+
+        .projectTypeWrap {
+            // width: 10em;
+            // height: 0.5em;
+            width: 16em;
+            height: 0.8em;
+            margin: 1.5em 0;
+            /* z-index: 1; */
+            transform: translateX(-17%);
+        }
+
+        .projectTypeBgd {
+            margin-top: 4.25em;
+        }
+
+        .serialNo {
+            height: 14em;
+            padding: 4em 0;
+        }
+
+        .projectTypeText {
+            // width: 60%;
+            width: 90%;
+            p {
+                text-align: center;
+                font-size: 1.25em;
+            }
+        }
+
+        .projectDescription {
+            margin-top: 2em;
+            // display: none;
+            p {
+                // font-size: 1.8em;
+                font-size: 1.5em;
+                line-height: 1.1em;
+            }
+        }
+
+        .actionButton {
+            margin: 2em 0;
+
+            h2 {
+                font-family: "Noe Display Bold", serif;
+                // font-size: 3em;
+                font-size: 3.5em;
+                line-height: 0.9em;
+            }
+        }
+
+        .actionButtonWrap {
+            width: 20.5em;
+        }
+
+        .actionButtonImage {
+            min-height: 8em;
+            min-width: 8em;
+            padding: 1em;
+        }
+
+        .lettersBgd {
+            width: 128%;
+            // background: yellow;
+        }
+
+        .letterWrap {
+            width: 150%;
+        }
+
+        .slash {
+            width: 62%;
+            right: 20.5%;
+        }
+
+        .totalSlides {
+            font-size: 2.2em;
+            position: absolute;
+            bottom: -1.1em;
+            left: 2.25em;
+        }
+
+        .currentSlide {
+            font-size: 5.8em;
+            line-height: 0.85em;
+        }
+    }
+}

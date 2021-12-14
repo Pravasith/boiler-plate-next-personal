@@ -1,0 +1,188 @@
+@import "./_vars";
+@import "./_mixins";
+
+.container {
+    width: 100%;
+    z-index: 2;
+
+    nav {
+        width: 100%;
+        // padding: 1em;
+        padding: 1em 5%;
+
+        @include flexCentreRow;
+        justify-content: space-between;
+    }
+
+    li {
+        margin: 0 0 0 19%;
+    }
+
+    .navWrap {
+        justify-content: space-between;
+    }
+
+    .innerWrap {
+        width: 100%;
+    }
+
+    .menuItems {
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            justify-content: flex-end;
+        }
+    }
+
+    .logoContainer {
+        width: 2em;
+        // height: 1.2em;
+        height: 1em;
+    }
+
+    .logo {
+        width: 100%;
+        top: -0.5em;
+    }
+
+    .hamburger {
+        width: 2em;
+        // background: $lightestGray;
+        display: none;
+    }
+
+    .barWrap {
+        width: 100%;
+    }
+
+    .bars {
+        width: 100%;
+        height: 0.3em;
+        border-radius: 1em;
+        background: $darkerGray;
+        margin: 0.3em 0;
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navItems {
+        background: $lightestGray;
+        width: 100%;
+        height: 100vh;
+
+        left: 0%;
+
+        transition: 0.2s ease-in-out;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .hide {
+        // display: none;
+        left: -100%;
+        // width: 0%;
+
+        // transition: 0.2s ease-in-out;
+    }
+
+    .closeBarT {
+        transform-origin: 50% 50%;
+        transform: translateY(0.6em) rotateZ(45deg);
+    }
+    .closeBarM {
+        transform-origin: 50% 50%;
+        width: 0%;
+    }
+    .closeBarB {
+        transform-origin: 50% 50%;
+        transform: translateY(-0.6em) rotateZ(-45deg);
+    }
+}
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .container {
+        .hamburger {
+            width: 2em;
+            display: flex;
+        }
+
+        .menuItems {
+            display: none;
+        }
+
+        ul {
+            margin: 25% 0;
+        }
+
+        li {
+            margin: 0;
+            font-size: 2em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    //   h1{
+    //     font-size: 3em;
+    //   }
+
+    //   h2{
+    //     font-size: 2.5em;
+    //   }
+
+    //   li{
+    //     font-size: 2em;
+    //   }
+
+    .container {
+        .logoContainer {
+            width: 3em;
+            height: 2em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1919px) {
+    .container {
+        li {
+            // font-size: 2em;
+            margin: 0px 0 0 30%;
+        }
+    }
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .container {
+        li {
+            font-size: 1.8em;
+            margin: 0px 0 0 30%;
+        }
+
+        nav {
+            padding: 2em 5%;
+        }
+
+        .logoContainer {
+            width: 3.5em;
+        }
+
+        .logo {
+            top: -1em;
+        }
+    }
+}

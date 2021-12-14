@@ -1,0 +1,374 @@
+@import "../vars";
+
+.container {
+    width: 100%;
+    // height: 100vh;
+    // background: red;
+    position: absolute;
+}
+
+// .innerWrap
+
+.bgdContent {
+    width: 100%;
+    height: 100%;
+}
+
+.bgdTexts {
+    // position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.innerContent {
+    width: 100%;
+    background: $lightestGray;
+    // height: 100vh;
+    // overflow-y: hidden;
+    // position: fixed;
+    // overflow-y: scroll;
+}
+
+.innerContentWrap {
+    width: 100%;
+    // height: 50vh;
+    // background: pink;
+}
+
+.sections {
+    width: 100%;
+}
+
+.innerContent {
+    .para {
+        // font-size: 1em;
+        color: $darkerGray;
+        // width: 85%;
+    }
+
+    .smallPara {
+        font-size: 0.85em;
+        color: $darkerGray;
+        // width: 85%;
+    }
+
+    .title {
+        margin: 1em 0 0.5em 0;
+        font-family: "Calibre", sans-serif;
+        font-size: 2.5em;
+        line-height: 0.8em;
+        font-weight: 600;
+
+        // width: 5em;
+    }
+
+    .picture {
+        // position: relative;
+        width: 100%;
+    }
+
+    .cover {
+        margin-top: 4em;
+    }
+
+    .sectionWrap {
+        width: 60%;
+    }
+
+    .boldPara {
+        color: $pureBlack;
+        font-weight: 600;
+    }
+
+    .image1Wrap {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .image1 {
+        // background: yellow;
+        width: 55%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .imageCaption {
+        margin: 1em 0;
+    }
+
+    .para2 {
+        margin-top: 1em;
+    }
+
+    .para3 {
+        margin-bottom: 4em;
+    }
+
+    .para4 {
+        margin-bottom: 2em;
+    }
+
+    .para5 {
+        margin-bottom: 2em;
+    }
+
+    .image2 {
+        margin-top: 3em;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .miniH {
+        margin: 1em 0;
+        margin-bottom: 0.5em;
+    }
+
+    .title1 {
+        width: 5em;
+    }
+
+    .title2 {
+        width: 8em;
+    }
+
+    .listPara {
+        margin: 0.35em;
+
+        margin-left: 0;
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+
+    .list {
+        margin: 2em 0;
+    }
+
+    .circle {
+        width: 1em;
+        height: 1em;
+        background: $darkerGray;
+        border-radius: 50%;
+        margin-right: 1em;
+    }
+
+    .persona {
+        margin: 1em 0;
+    }
+
+    .leftPersona {
+        // background: yellow;
+    }
+
+    .personaTitle {
+        // background: purple;
+    }
+
+    .no {
+        //    background: royalblue;
+        margin: 0.2em;
+        font-family: "Calibre", sans-serif;
+        font-size: 2.5em;
+        line-height: 1em;
+        font-weight: 600;
+    }
+
+    .perTitle {
+        // background: sandybrown;
+
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 1em;
+        line-height: 1em;
+    }
+
+    .personaImage {
+        // background: silver;
+        width: 10em;
+        margin-top: 1em;
+    }
+
+    .rightPersona {
+        margin-left: 2em;
+        margin-top: 0.5em;
+    }
+
+    .ageWrap {
+        width: 10em;
+        // background: greenyellow;
+    }
+
+    .freqUser {
+        width: 10em;
+        // background: greenyellow;
+    }
+
+    .name {
+        font-size: 1.2em;
+        font-weight: 600;
+        // margin-top: 1em;
+        line-height: 1em;
+
+        p {
+            // color: $pureWhite;
+        }
+    }
+
+    .freqBgd {
+        width: 9em;
+        left: -1em;
+        top: -0.1em;
+    }
+
+    .name1 {
+        margin-top: 0.2em;
+
+        p {
+            color: $pureWhite;
+        }
+    }
+
+    .listPara2 {
+        margin: 0.35em;
+
+        p {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+    }
+
+    .circle2 {
+        width: 1em;
+        height: 1em;
+        // border-radius: 50%;
+
+        margin-right: 0.85em;
+        // background: #8CC63F;
+    }
+
+    .sideStuff {
+    }
+
+    .sideLeft {
+        margin-top: 1em;
+
+        margin-right: 0.5em;
+    }
+
+    .serialNo {
+        margin: 0.2em;
+        margin-left: 0;
+        font-family: "Calibre", sans-serif;
+        font-size: 2.5em;
+        line-height: 1em;
+        font-weight: 600;
+    }
+
+    .sideRight {
+        // background: yellow;
+
+        margin-top: 0.75em;
+    }
+
+    .paraX34 {
+        margin-bottom: 1em;
+        // margin-top: 0;
+    }
+
+    .paraX45 {
+        margin: 1.5em 0;
+    }
+
+    .miniHX {
+        // width: 50%;
+    }
+
+    .titleFood {
+        width: 11em;
+    }
+
+    .innerPriorities {
+        margin: 1em 0;
+    }
+
+    .imagePriorities {
+        width: 75%;
+    }
+
+    .rightPrios {
+        padding: 2em;
+    }
+
+    .imageNairobi {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .captHolt {
+        width: 100%;
+    }
+
+    .fin {
+        margin: 1em 0;
+    }
+}
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .innerContent {
+        .sideStuff {
+            flex-direction: column;
+        }
+
+        .innerPriorities {
+            flex-direction: column;
+        }
+
+        .sectionWrap {
+            width: 100%;
+            padding: 5%;
+        }
+
+        .persona {
+            flex-direction: column;
+        }
+
+        h1 {
+            // width: 100%;
+        }
+
+        .title,
+        .title1,
+        .titleFood {
+            width: 100%;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1335px) {
+}
+
+//
+@media screen and (min-width: 1336px) and (max-width: 1365px) {
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+}

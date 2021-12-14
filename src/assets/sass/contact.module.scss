@@ -1,0 +1,368 @@
+@import "./vars";
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: $pureWhite;
+    position: absolute;
+}
+
+.bgdContent {
+    width: 100%;
+    height: 100%;
+}
+
+.bgdTexts {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.innerContent {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .threeCanvas {
+        width: 45%;
+        height: 25em;
+        right: 9em;
+        left: auto;
+        top: 7em;
+    }
+
+    .stringCheese {
+        width: 3em;
+        top: 25em;
+        left: 32%;
+    }
+}
+
+.innerWrap {
+    width: 100%;
+    height: 10em;
+    padding: 10%;
+
+    .contactTrails {
+        width: 100%;
+
+        .trailT1,
+        .trailT2,
+        .trailT3 {
+            // width: 0.17em;
+            width: 0.2em;
+            left: 12em;
+
+            // z-index: 2;
+        }
+
+        .trailT1 {
+            top: -19em;
+        }
+
+        .trailT2 {
+            top: 15em;
+        }
+
+        .trailT3 {
+            top: 23em;
+        }
+    }
+
+    .hopeYouLike {
+        width: 10em;
+        margin-bottom: 1em;
+    }
+
+    .finalP {
+        // font-size: 1em;
+        width: 20em;
+        margin-bottom: 0.5em;
+
+        a {
+            color: $magenta;
+            text-decoration: underline;
+        }
+    }
+
+    .twitter {
+        background: $blue;
+        border-radius: 5em;
+        padding: 1em 1.85em 0.4em 1.5em;
+        margin: 1em 0;
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+
+        margin-top: 3em;
+
+        .twitterIcon {
+            width: 2em;
+            margin: 0 0.5em;
+        }
+
+        p {
+            font-size: 1.12em;
+            color: $pureWhite;
+            line-height: normal;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            background: $blue29;
+        }
+    }
+}
+
+.contactInner {
+    width: 100%;
+    // background: rgb(182, 19, 46);
+    height: 10em;
+    padding: 4em 10%;
+}
+
+.scrollAnim {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 1em;
+    // opacity: 0;
+
+    .scrollInner {
+        width: 10%;
+    }
+
+    .scrollText {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.blueBallHolder {
+    width: 4em;
+    top: -6.3em;
+    left: 3.6em;
+    // opacity: 0;
+}
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .container {
+        .hopeYouLike {
+            width: 100%;
+        }
+
+        .finalP {
+            width: 100%;
+        }
+
+        .threeCanvas {
+            width: 100%;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: -3em;
+            height: 20em;
+        }
+
+        .twitter {
+            margin-top: 1em;
+        }
+
+        .stringCheese {
+            width: 3em;
+            top: 10em;
+            left: 57%;
+        }
+
+        .innerWrap {
+            .trailT1,
+            .trailT2,
+            .trailT3 {
+                width: 0.2em;
+                left: 4em;
+            }
+
+            .trailT2 {
+                top: 36em;
+            }
+
+            .trailT3 {
+                top: 25em;
+            }
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        .innerWrap {
+            padding: 10% 0;
+
+            .trailT1,
+            .trailT2,
+            .trailT3 {
+                width: 0.3em;
+                left: 9em;
+            }
+
+            .trailT1 {
+                top: -31em;
+            }
+
+            .trailT2 {
+                top: 17em;
+            }
+
+            .trailT3 {
+                top: 26em;
+            }
+        }
+
+        .threeCanvas {
+            width: 100%;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: -3em;
+            height: 40em;
+        }
+
+        .twitter {
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .container {
+        .innerWrap {
+            padding: 10% 0;
+
+            .trailT1,
+            .trailT2,
+            .trailT3 {
+                width: 0.3em;
+                left: 9em;
+            }
+
+            .trailT1 {
+                top: -31em;
+            }
+
+            .trailT2 {
+                top: 21em;
+            }
+
+            .trailT3 {
+                top: 33em;
+            }
+        }
+
+        .stringCheese {
+            width: 6em;
+            top: 23em;
+            left: 47%;
+        }
+
+        .threeCanvas {
+            width: 100%;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: -3em;
+            height: 50em;
+        }
+
+        .twitter {
+            padding: 1.5em 3em;
+            margin: 1em 0;
+
+            margin-top: 4em;
+
+            .twitterIcon {
+                width: 3em;
+                margin: 0 0.5em;
+            }
+
+            p {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+    .container {
+        .innerWrap {
+            .stringCheese {
+                width: 5em;
+            }
+        }
+
+        .threeCanvas {
+            height: 32em;
+            top: 3em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .container {
+        .threeCanvas {
+            width: 50%;
+            height: 40em;
+        }
+
+        .innerWrap {
+            .stringCheese {
+                width: 6em;
+            }
+
+            .trailT1,
+            .trailT2,
+            .trailT3 {
+                width: 0.3em;
+                left: 15em;
+            }
+
+            .trailT1 {
+                top: -31em;
+            }
+
+            .trailT2 {
+                top: 21em;
+            }
+
+            .trailT3 {
+                top: 33em;
+            }
+
+            .twitter {
+                padding: 1.5em 3em;
+                margin: 1em 0;
+
+                margin-top: 4em;
+
+                .twitterIcon {
+                    width: 3em;
+                    margin: 0 0.5em;
+                }
+
+                p {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}

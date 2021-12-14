@@ -1,0 +1,886 @@
+@import "./vars";
+
+.container {
+    width: 100%;
+    // background: $lightestGray;
+    background: $highlightColor;
+    // overflow: hidden;
+    height: 100vh;
+}
+
+.loadingContainer {
+    width: 100%;
+    height: 100vh;
+    // z-index: 5;
+
+    position: absolute;
+
+    background: $pureWhite;
+}
+
+.apiCall {
+    width: 100%;
+    height: 100%;
+
+    // margin: 0 1em;
+}
+
+.loadingDot {
+    min-width: 1em;
+    min-height: 1em;
+    background: $pureWhite;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0em);
+    }
+    40% {
+        transform: translateY(-1em);
+    }
+    80% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+.blueX {
+    background: $blue;
+    animation: jump 1s ease-in-out 0.25s infinite;
+}
+
+.pinkX {
+    background: $magenta;
+    animation: jump 1s ease-in-out 0.5s infinite;
+}
+
+.yellowX {
+    background: $yellow;
+    animation: jump 1s ease-in-out 0.75s infinite;
+}
+
+.mainContainer {
+    width: auto;
+}
+
+.background {
+    width: 100%;
+    // position: absolute;
+    position: fixed;
+    // overflow: hidden;
+}
+
+.ballSack {
+    // width: 4em;
+    left: 50%;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+}
+
+.balls_Lol {
+}
+
+.blueBall,
+.pinkBall {
+    pointer-events: none;
+    position: absolute;
+
+    // height: 5.5em;
+    width: 5.5em;
+
+    object-fit: cover;
+
+    img {
+        // height: 5.5em;
+        width: 5.5em;
+        border-radius: 10em;
+    }
+
+    transform-origin: 50% 50%;
+    // transform: translateX(-40%);
+
+    left: 50%;
+    top: 50%;
+
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.homeBlueBall {
+    width: 4.25em;
+    left: 54.25%;
+    top: 30%;
+}
+
+.worksBlueBall {
+    // width: 3.5em;
+    // top: 50%;
+    // left: 17%;
+
+    width: 3.5em;
+    top: 74%;
+    left: 22%;
+}
+
+.worksBlueBall_Odd {
+    width: 4.25em;
+    top: 49%;
+    left: 50%;
+}
+
+.worksBlueBall_Even {
+    width: 3.5em;
+    // top: 63%;
+    // top: 71%;
+    // left: 14%;
+
+    top: 65%;
+    left: 41%;
+}
+
+.aboutBlueBall {
+    width: 4.25em;
+    top: 49%;
+    left: 50%;
+}
+
+.aboutBlueBall_2 {
+    width: 4em;
+    top: 100%;
+    left: 55%;
+}
+
+.aboutBlueBall_3 {
+    width: 3em;
+    top: 175%;
+    left: 33%;
+}
+
+.aboutBlueBall_4 {
+    width: 4.25em;
+    top: 362%;
+    left: 36%;
+}
+
+.aboutBlueBall_5 {
+    width: 3.25em;
+    top: 556%;
+    left: 30%;
+}
+
+.contactBlueBall {
+    // width: 0;
+    // height: 0;
+
+    opacity: 0;
+}
+
+.clearBlueBall {
+    // width: 0;
+    // height: 0;
+
+    opacity: 0;
+}
+
+.homePinkBall {
+    width: 3em;
+    left: 64.2%;
+    top: 67%;
+}
+
+.worksPinkBall {
+    width: 4.25em;
+    left: 50%;
+    top: 26%;
+}
+
+.worksPinkBall_Odd {
+    width: 3.25em;
+    left: 33%;
+    top: 20%;
+}
+
+.worksPinkBall_Even {
+    width: 4.25em;
+    left: 50%;
+    top: 26%;
+}
+
+.aboutPinkBall {
+    width: 3em;
+    left: 64.2%;
+    top: 67%;
+}
+
+.aboutPinkBall_2 {
+    width: 3.2em;
+    left: 19%;
+    top: 122%;
+}
+
+.aboutPinkBall_3 {
+    width: 3.2em;
+    left: 54%;
+    top: 279%;
+}
+
+.aboutPinkBall_4 {
+    width: 3.25em;
+    top: 400%;
+    left: 65%;
+}
+
+.aboutPinkBall_5 {
+    width: 4.25em;
+    top: 500%;
+    left: 70%;
+}
+
+.contactPinkBall {
+    // width: 0;
+    // height: 0;
+
+    opacity: 0;
+}
+
+.clearPinkBall {
+    // width: 0;
+    // height: 0;
+
+    opacity: 0;
+}
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    // HOME
+    .homeBlueBall {
+        width: 3em;
+        left: 14.25%;
+        top: 21%;
+    }
+
+    .homePinkBall {
+        // width: 3em;
+        // left: 52.2%;
+        // top: 76%;
+
+        width: 3em;
+        left: 40.2%;
+        top: 75%;
+    }
+
+    // WORKS
+    .worksBlueBall {
+        width: 3.5em;
+        top: 78%;
+        left: 15%;
+    }
+
+    .worksBlueBall_Odd {
+        width: 4.25em;
+        top: 40%;
+        left: 5%;
+    }
+
+    .worksBlueBall_Even {
+        width: 4.5em;
+        top: 5%;
+        left: 13%;
+    }
+
+    .worksPinkBall {
+        width: 4.25em;
+        left: 62%;
+        top: 21%;
+    }
+
+    .worksPinkBall_Odd {
+        width: 3em;
+        left: 72%;
+        top: 14%;
+    }
+
+    .worksPinkBall_Even {
+        width: 3.25em;
+        left: 68%;
+        top: 45%;
+    }
+
+    .aboutBlueBall {
+        width: 3.25em;
+        top: 46%;
+        left: 76%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 4em;
+        top: 110%;
+        left: 80%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 3em;
+        left: 8.2%;
+        top: 352%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 4.25em;
+        top: 374vh;
+        left: 33em;
+
+        width: 3em;
+        left: 77.2%;
+        top: 459%;
+    }
+
+    .aboutBlueBall_5 {
+        width: 3em;
+        left: 22.2%;
+        top: 625%;
+    }
+
+    .aboutPinkBall {
+        width: 3em;
+        left: 20.2%;
+        top: 59%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 3.2em;
+        left: 30%;
+        top: 158%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 3em;
+        left: 64.2%;
+        top: 201%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 3em;
+        left: 24.2%;
+        top: 493%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 4em;
+        left: 67.2%;
+        top: 559%;
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .homeBlueBall {
+        width: 5em;
+        left: 34.25%;
+        top: 14%;
+    }
+
+    .homePinkBall {
+        width: 4em;
+        left: 51.2%;
+        top: 70%;
+    }
+
+    // WORKS
+    .worksBlueBall {
+        width: 5.5em;
+        top: 42%;
+        left: 4%;
+    }
+
+    .worksBlueBall_Odd {
+        width: 4.25em;
+        top: 40%;
+        left: 5%;
+    }
+
+    .worksBlueBall_Even {
+        width: 4.5em;
+        top: 7%;
+        left: 25%;
+    }
+
+    .worksPinkBall {
+        width: 4.25em;
+        left: 72%;
+        top: 53%;
+    }
+
+    .worksPinkBall_Odd {
+        width: 3em;
+        left: 72%;
+        top: 14%;
+    }
+
+    .worksPinkBall_Even {
+        width: 4.5em;
+        left: 74%;
+        top: 46%;
+    }
+
+    .aboutBlueBall {
+        width: 4.25em;
+        top: 43%;
+        left: 78%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 4em;
+        top: 66%;
+        left: 28%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 4em;
+        left: 65.2%;
+        top: 120%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 3em;
+        left: 41.2%;
+        top: 313%;
+    }
+
+    .aboutBlueBall_5 {
+        width: 4em;
+        left: 65.2%;
+        top: 356%;
+    }
+
+    .aboutPinkBall {
+        width: 4em;
+        left: 47.2%;
+        top: 12%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 3.2em;
+        left: 74%;
+        top: 105%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 3em;
+        left: 32.2%;
+        top: 207%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 5em;
+        left: 70.2%;
+        top: 274%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 3em;
+        left: 24.2%;
+        top: 454%;
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .homeBlueBall {
+        width: 6em;
+        left: 34.25%;
+        top: 21%;
+    }
+
+    .homePinkBall {
+        width: 4.5em;
+        left: 53.2%;
+        top: 76%;
+    }
+
+    // WORKS
+    .worksBlueBall {
+        width: 6.5em;
+        top: 42%;
+        left: 4%;
+    }
+
+    .worksBlueBall_Odd {
+        width: 5.25em;
+        top: 40%;
+        left: 5%;
+    }
+
+    .worksBlueBall_Even {
+        width: 5.5em;
+        top: 7%;
+        left: 25%;
+    }
+
+    .worksPinkBall {
+        width: 5.25em;
+        left: 72%;
+        top: 53%;
+    }
+
+    .worksPinkBall_Odd {
+        width: 4em;
+        left: 72%;
+        top: 14%;
+    }
+
+    .worksPinkBall_Even {
+        width: 5.5em;
+        left: 74%;
+        top: 46%;
+    }
+
+    .aboutBlueBall {
+        width: 4.25em;
+        top: 43%;
+        left: 78%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 4em;
+        top: 66%;
+        left: 28%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 4em;
+        left: 65.2%;
+        top: 120%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 3em;
+        left: 41.2%;
+        top: 313%;
+
+        width: 4em;
+        left: 36.2%;
+        top: 333%;
+    }
+
+    .aboutBlueBall_5 {
+        // width: 4em;
+        // left: 65.2%;
+        // top: 356%;
+
+        width: 5em;
+        left: 72.2%;
+        top: 377%;
+    }
+
+    .aboutPinkBall {
+        width: 4em;
+        left: 47.2%;
+        top: 12%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 3.2em;
+        left: 74%;
+        top: 105%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 3em;
+        left: 32.2%;
+        top: 207%;
+
+        width: 6em;
+        left: 14.2%;
+        top: 221%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 5em;
+        left: 70.2%;
+        top: 274%;
+
+        width: 5em;
+        left: 70.2%;
+        top: 296%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 4em;
+        left: 24.2%;
+        top: 438%;
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+    .homeBlueBall {
+        // width: 4.25em;
+        // left: 57.25%;
+        // top: 33%;
+
+        width: 4.25em;
+        left: 57.25%;
+        top: 38%;
+    }
+
+    .homePinkBall {
+        width: 3.5em;
+        left: 69.5%;
+        // top: 70%;
+
+        // top: auto;
+        bottom: 20%;
+    }
+
+    .aboutBlueBall {
+        width: 5.25em;
+        top: 66%;
+        left: 35%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 5em;
+        top: 94%;
+        left: 33%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 4em;
+        left: 31.2%;
+        top: 176%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 4em;
+        left: 9.2%;
+        top: 375%;
+    }
+
+    .aboutBlueBall_5 {
+        width: 4em;
+        left: 36.2%;
+        top: 476%;
+    }
+
+    .aboutPinkBall {
+        width: 4em;
+        left: 61.2%;
+        top: 20%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 3.2em;
+        left: 48%;
+        top: 150%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 6em;
+        left: 14.2%;
+        top: 267%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 4em;
+        left: 34.2%;
+        top: 422%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 4em;
+        left: 56.2%;
+        top: 556%;
+    }
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    .homeBlueBall {
+        // width: 4.25em;
+        // left: 57.25%;
+        // top: 33%;
+
+        width: 4.25em;
+        left: 57.25%;
+        top: 36%;
+    }
+
+    .homePinkBall {
+        // width: 3.5em;
+        // left: 69.5%;
+        // top: 65%;
+
+        width: 3.5em;
+        left: 69.5%;
+        // top: 70%;
+
+        // top: auto;
+        bottom: 17%;
+    }
+
+    .aboutBlueBall {
+        width: 5.25em;
+        top: 66%;
+        left: 35%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 5em;
+        top: 94%;
+        left: 33%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 4em;
+        left: 31.2%;
+        top: 176%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 4em;
+        left: 9.2%;
+        top: 375%;
+    }
+
+    .aboutBlueBall_5 {
+        width: 4em;
+        left: 36.2%;
+        top: 476%;
+    }
+
+    .aboutPinkBall {
+        width: 4em;
+        left: 61.2%;
+        top: 20%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 3.2em;
+        left: 48%;
+        top: 150%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 6em;
+        left: 14.2%;
+        top: 267%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 4em;
+        left: 34.2%;
+        top: 422%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 4em;
+        left: 56.2%;
+        top: 556%;
+    }
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .homeBlueBall {
+        width: 6.25em;
+        left: 55.25%;
+        top: 37%;
+    }
+
+    .homePinkBall {
+        width: 5em;
+        left: 65.5%;
+        top: 70%;
+    }
+
+    // WORKS
+    .worksBlueBall {
+        width: 7.5em;
+    }
+
+    .worksBlueBall_Odd {
+        width: 6.25em;
+    }
+
+    .worksBlueBall_Even {
+        width: 6.5em;
+    }
+
+    .worksPinkBall {
+        width: 6.25em;
+    }
+
+    .worksPinkBall_Odd {
+        width: 5em;
+    }
+
+    .worksPinkBall_Even {
+        width: 6.5em;
+    }
+
+    .aboutBlueBall {
+        width: 6.25em;
+        top: 66%;
+        left: 35%;
+    }
+
+    .aboutBlueBall_2 {
+        width: 5em;
+        top: 94%;
+        left: 33%;
+    }
+
+    .aboutBlueBall_3 {
+        width: 5em;
+        left: 31.2%;
+        top: 172%;
+    }
+
+    .aboutBlueBall_4 {
+        width: 4em;
+        left: 14.2%;
+        top: 395%;
+    }
+
+    .aboutBlueBall_5 {
+        width: 6em;
+        left: 9.2%;
+        top: 474%;
+    }
+
+    .aboutPinkBall {
+        width: 5em;
+        left: 61.2%;
+        top: 20%;
+    }
+
+    .aboutPinkBall_2 {
+        width: 4.2em;
+        left: 48%;
+        top: 142%;
+    }
+
+    .aboutPinkBall_3 {
+        width: 6em;
+        left: 8.2%;
+        top: 266%;
+    }
+
+    .aboutPinkBall_4 {
+        width: 6em;
+        left: 61.2%;
+        top: 354%;
+    }
+
+    .aboutPinkBall_5 {
+        width: 4em;
+        left: 48.2%;
+        top: 518%;
+    }
+}

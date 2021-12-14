@@ -1,0 +1,1235 @@
+@import "./vars";
+
+.container {
+    width: 100%;
+    // height: 100vh;
+    // background: red;
+    position: absolute;
+}
+
+// .innerWrap
+
+.bgdContent {
+    width: 100%;
+    height: 100vh;
+
+    // overflow-y: hidden;
+}
+
+.innerContent {
+    width: 100%;
+    // height: 100%;
+    // overflow-y: hidden;
+}
+
+.aboutContentWrap {
+    width: 100%;
+    // height: 100vh;
+
+    .threeCanvas {
+        // width: 45%;
+        // height: 25em;
+        // z-index: 2;
+        // right: 10%;
+        // left: auto;
+        // top: 5%;
+
+        width: 45%;
+        height: 25em;
+        // z-index: 2;
+        right: 9em;
+        left: auto;
+        top: 7em;
+    }
+}
+
+.about2Inner2 {
+    padding: 0 7.5%;
+}
+
+.trailsAndYellowBall {
+    width: 100%;
+    height: 100vh;
+}
+
+.innerContent {
+    .aboutTrails {
+        width: 100%;
+    }
+
+    .trailT1,
+    .trailT2,
+    .trailT3,
+    .trailT4,
+    .trailT5,
+    .trailT6,
+    .trailT7,
+    .trailT8,
+    .trailT9,
+    .trailT10 {
+        // width: 0.17em;
+        width: 0.2em;
+        left: 17em;
+
+        z-index: 1;
+    }
+
+    .trailT1 {
+        top: -11em;
+    }
+
+    .trailT2 {
+        top: -14em;
+    }
+
+    .trailT3 {
+        top: auto;
+        bottom: -28em;
+    }
+
+    .trailT4 {
+        top: auto;
+        bottom: -32em;
+    }
+
+    .trailT5 {
+        top: 37em;
+    }
+
+    .trailT6 {
+        // top: 62em;
+        top: 67em;
+    }
+
+    .trailT7 {
+        // top: 12em;
+        top: 10.2em;
+    }
+
+    .trailT8 {
+        top: 27.5em;
+    }
+
+    .trailT9 {
+        top: 15em;
+    }
+
+    .trailT10 {
+        top: 5em;
+    }
+
+    .whiteBall {
+        width: 10em;
+        height: 10em;
+        background: $pureWhite;
+        border-radius: 50%;
+
+        top: 8em;
+        left: 13.5em;
+
+        // top: 31%;
+        // left: 14%;
+    }
+}
+
+.about1,
+.about2,
+.about3,
+.about4,
+.about5 {
+    width: 100%;
+}
+
+.about1 {
+    height: 100vh;
+    background: $paleYellow;
+    // background: $yellow;
+
+    // background: $lightestGray;
+
+    padding: 0 10%;
+}
+
+.aboutL {
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+
+    padding: 0 10%;
+    padding-top: 16%;
+
+    p {
+        // font-size: 1em;
+        // font-weight: 350;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.aboutR {
+    width: 50%;
+    height: 100%;
+    // background: violet;
+}
+
+.stuffAboutMe {
+    width: 75%;
+    width: 60%;
+    margin: 1em 0 0.5em 0;
+
+    // z-index: 1;
+}
+
+.professional {
+    // width: 90%;
+    margin: 1em 0;
+    // margin-top: 2em;
+}
+
+.but {
+    // width: 90%;
+    // margin: 0.25em 0;
+    // margin: 1.2em 0;
+}
+
+.about2 {
+    // height: 100vh;
+    height: 80vh;
+    background: $paleYellow;
+    // background: $yellow;
+
+    // background: $lightestGray;
+
+    // padding: 0 10%;
+}
+
+.aboutBgd {
+    width: 100%;
+    height: 100vh;
+    // bottom: 0;
+
+    // object-fit: fill;
+}
+
+.bgdText,
+.wave1,
+.wave2 {
+    bottom: -3%;
+    width: 100%;
+}
+
+.bgdText {
+    bottom: -24%;
+}
+
+.aboutContentWrap {
+    .stringCheese {
+        // width: 2em;
+        bottom: 30%;
+        top: auto;
+        left: auto;
+        right: 26%;
+        width: 3.5em;
+    }
+}
+
+.about2Content,
+.about3Content,
+.about4Content,
+.about5Content {
+    width: 100%;
+    // height: 2em;
+
+    // Mobile
+    // overflow-x: scroll;
+    padding: 0 10%;
+}
+
+.about2Content {
+    // background: pink;
+    // overflow: hidden;
+}
+
+.about3Content {
+    margin-top: 2em;
+}
+
+.about2Inner,
+.about3Inner,
+.about4Inner,
+.about5Inner {
+    padding: 1em 10%;
+}
+
+.about4Inner {
+    margin-top: 2em;
+}
+
+.myJourney,
+.designAndMe,
+.technologyAndMe {
+    width: 4em;
+}
+
+.technologyAndMe {
+    margin-top: 6em;
+}
+
+.resume {
+    background: $highlightColor;
+    border-radius: 5em;
+    width: 7em;
+
+    // padding: 1em;
+    // padding: 0.8em 1.5em 0.7em 1.5em;
+    // padding: 0.6em 1.5em 0.4em 1.5em;
+    padding: 0.6em 1em;
+    margin: 1em 0;
+    // margin-top: 2em;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+
+    p {
+        font-size: 1.2em;
+        color: $pureWhite;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &:hover {
+        background: $blue;
+    }
+}
+
+.journeySlides {
+    // background: pink;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 92%;
+}
+
+.slide {
+    background: $pureWhite;
+    width: 9em;
+    // height: 10em;
+    padding: 0.75em;
+}
+
+.innerSlide {
+    height: 100%;
+    background: $lightGray;
+    padding: 0.75em;
+    // padding-bottom: 2em;
+
+    // p{
+    //     font-size: 1em;
+    //     line-height: normal;
+    // }
+}
+
+.about3 {
+    height: 100%;
+    width: 100%;
+    // height: 100vh;
+    background: $pureWhite;
+    // background: $lightestGray;
+
+    // padding: 0 10%;
+}
+
+.about3Content {
+    background: $pureWhite;
+    // z-index: 1;
+    // width: 50%;
+    // height: 100%;
+
+    padding: 0 10%;
+    // padding-top: 16%;
+
+    p {
+        // font-size: 1em;
+        // font-weight: 350;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.designProcess1,
+.designProcess2,
+.techProcess1,
+.techProcess2,
+.techProcess3,
+.techProcess4 {
+    width: 95%;
+    // margin-top: 4em;
+}
+
+.designProcess1 {
+    margin-top: 2em;
+}
+
+.designProcess2 {
+    margin-top: 1em;
+}
+
+.techProcess1 {
+    margin-top: 2em;
+}
+
+.techProcess2,
+.techProcess3 {
+    margin-top: 1em;
+}
+
+.techProcess3 {
+    margin-bottom: 10em;
+}
+
+.designGraphicsWrap {
+    width: 100%;
+    // background: pink;
+    // height: 12em;
+    padding: 1em 0;
+    justify-content: space-between;
+}
+
+.designInnerWrap {
+    width: 45%;
+    // background: yellow;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    // margin-right: 0;
+}
+
+.designItemsWrap {
+    width: 100%;
+    // background: maroon;
+    justify-content: space-between;
+    // margin: 0.5em 0;
+    // padding-right: 3em;
+}
+
+.designItem {
+    // width: 5em;
+    // height: 8em;
+
+    // background: white;
+    padding: 0.5em;
+    // margin: 0.5em;
+}
+
+.designIcon {
+    width: 7em;
+    /* height: 8em; */
+    // background: yellow;
+}
+
+.designText {
+    // margin: 0.25em;
+    width: 70%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.phaseWrap {
+    width: 100%;
+
+    .designText {
+        // margin: 0.25em;
+        // width: 70%;
+        // text-align: center;
+        font-weight: 600;
+    }
+}
+
+.phaseIcon {
+    width: 90%;
+}
+
+.about4,
+.about5 {
+    // background: $yellow;
+    background: $lightestGray;
+
+    // padding: 0 10%;
+}
+
+.tools {
+    width: 7em;
+    // margin-bottom: 2em;
+    margin-bottom: 2.5em;
+}
+
+.personaleTitle {
+    margin-top: 3em;
+}
+
+.toolTitle1,
+.toolTitle2 {
+    margin: 0.4em 0;
+}
+
+.toolTitle2 {
+    margin-top: 2em;
+}
+
+.skillsWrap {
+    width: 70%;
+}
+
+.skillsWrap div {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.skillsBox {
+    // height: 2em;
+    background: $pureWhite;
+    padding: 0.85em 1.85em 0.85em 1.5em;
+
+    p {
+        font-size: 1.2em;
+        font-weight: 450;
+    }
+}
+
+.skillIcon {
+    width: 2.2em;
+    height: 2.2em;
+    margin-right: 0.85em;
+}
+
+.personalsWrap {
+    width: 70%;
+    margin-bottom: 15em;
+
+    .personales {
+        // font-size: 1em;
+        margin: 0.5em 0;
+    }
+}
+
+.scrollAnim {
+    position: absolute;
+    width: 100%;
+    // bottom: 0;
+    bottom: 0em;
+    margin-bottom: 1em;
+    // opacity: 0;
+    background: $lightestGray;
+
+    .scrollInner {
+        width: 10%;
+    }
+
+    .scrollText {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .container {
+        .journeySlides {
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        .about1 {
+            flex-direction: column;
+        }
+
+        .aboutL,
+        .aboutR {
+            width: 100%;
+        }
+
+        .aboutR {
+            display: none;
+        }
+
+        .threeCanvas {
+            width: 100%;
+            height: 25em;
+            z-index: 1;
+            right: auto;
+            left: auto;
+            bottom: auto;
+            top: 48vh;
+        }
+
+        .about1,
+        .about2Content,
+        .about3Content,
+        .about4Content,
+        .about5Content {
+            padding: 0;
+        }
+
+        .whiteBall {
+            width: 6em;
+            height: 6em;
+            top: 5em;
+            left: 1em;
+        }
+
+        .trailT2 {
+            top: 0em;
+        }
+
+        .trailT3 {
+            bottom: -22em;
+        }
+
+        .trailT4 {
+            bottom: -40em;
+        }
+
+        .about2 {
+            height: 100vh;
+        }
+
+        .about2Inner2 {
+            align-items: flex-end;
+            padding: 0 20%;
+        }
+
+        .stringCheese {
+            bottom: 3%;
+            top: auto;
+            left: auto;
+            right: 50%;
+            width: 3.5em;
+        }
+
+        .about3Content {
+            margin: 2em 0;
+        }
+
+        .designGraphicsWrap {
+            flex-direction: column;
+        }
+
+        .designInnerWrap {
+            width: 100%;
+        }
+
+        .designIcon {
+            width: 5em;
+        }
+
+        .trailT5 {
+            top: 70em;
+            left: 4em;
+        }
+
+        .trailT6 {
+            top: 110em;
+            left: 4em;
+        }
+
+        .skillsWrap {
+            width: 100%;
+            margin: 1em 0;
+        }
+
+        .skillIcon {
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        .skillsBox {
+            padding: 0.5em 1em 0.35em 1em;
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .trailT7,
+        .trailT8,
+        .trailT9,
+        .trailT10 {
+            left: 4em;
+        }
+
+        .personalsWrap {
+            width: 100%;
+        }
+
+        .scrollInner {
+            // width: 10em;
+            // margin-bottom: 3em;
+            width: 7em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        h3 {
+            width: 90%;
+            font-size: 2em;
+            margin: 0.35em 0;
+            margin-top: 0.5em;
+            line-height: 0.7em;
+        }
+
+        .about1,
+        .about2Content,
+        .about3Content,
+        .about4Content,
+        .about5Content {
+            padding: 0;
+        }
+
+        .whiteBall {
+            top: 8em;
+            left: -1.5em;
+        }
+
+        .about3Content {
+            margin: 2em 0;
+        }
+
+        .designGraphicsWrap {
+            // flex-direction: column;
+        }
+
+        .designInnerWrap {
+            width: 100%;
+        }
+
+        .designIcon {
+            width: 5em;
+        }
+
+        .trailT5 {
+            top: 70em;
+            left: 4em;
+        }
+
+        .threeCanvas {
+            width: 55%;
+            right: 0em;
+        }
+
+        .trailT1,
+        .trailT2,
+        .trailT3,
+        .trailT4,
+        .trailT5,
+        .trailT6,
+        .trailT7,
+        .trailT8,
+        .trailT9,
+        .trailT10 {
+            // width: 0.17em;
+            width: 0.2em;
+            left: 8em;
+        }
+
+        .trailT1 {
+            top: -14em;
+        }
+
+        .trailT2 {
+            top: -11em;
+        }
+
+        .trailT5 {
+            // top: 43em;
+            top: 50em;
+        }
+
+        .trailT6 {
+            // top: 76em;
+            top: 85em;
+        }
+
+        .trailT7 {
+            top: 12.2em;
+        }
+
+        .trailT8 {
+            top: 35.5em;
+        }
+
+        .trailT9 {
+            top: 18em;
+        }
+
+        .about2 {
+            height: 46vh;
+        }
+
+        .stringCheese {
+            // left: 1em;
+            bottom: -4%;
+            top: auto;
+            left: auto;
+            right: 50%;
+            width: 4.5em;
+        }
+
+        .about1 {
+            height: 70vh;
+        }
+
+        .personalsWrap {
+            .personales {
+                // font-size: 1.2em;
+            }
+        }
+
+        .aboutL {
+            width: 60%;
+        }
+
+        // .innerSlide{
+        //     p{
+        //         font-size: 1.2em;
+        //         line-height: 1em
+        //     }
+        // }
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .container {
+        // .innerSlide{
+        //     p{
+        //         font-size: 1.2em;
+        //         line-height: 1em
+        //     }
+        // }
+
+        h3 {
+            width: 90%;
+            font-size: 2em;
+            margin: 0.35em 0;
+            margin-top: 0.5em;
+            line-height: 0.7em;
+        }
+
+        .about1,
+        .about2Content,
+        .about3Content,
+        .about4Content,
+        .about5Content {
+            padding: 0;
+        }
+
+        .whiteBall {
+            top: 10em;
+            left: -0.5em;
+            width: 14em;
+            height: 14em;
+        }
+
+        .about3Content {
+            margin: 2em 0;
+        }
+
+        .designGraphicsWrap {
+            flex-direction: column;
+            width: 75%;
+        }
+
+        .designInnerWrap {
+            width: 100%;
+        }
+
+        .designIcon {
+            width: 8em;
+        }
+
+        .trailT5 {
+            top: 70em;
+            left: 4em;
+        }
+
+        .threeCanvas {
+            width: 60%;
+            height: 40em;
+            // right: 2em;
+            right: 0em;
+        }
+
+        .trailT1,
+        .trailT2,
+        .trailT3,
+        .trailT4,
+        .trailT5,
+        .trailT6,
+        .trailT7,
+        .trailT8,
+        .trailT9,
+        .trailT10 {
+            // width: 0.17em;
+            width: 0.2em;
+            left: 8em;
+        }
+
+        // .innerSlide{
+        //     p{
+        //         font-size: 1.5em;
+        //         line-height: 1em;
+        //     }
+        // }
+
+        .slide {
+            width: 11em;
+            width: 12em;
+            padding: 1em;
+        }
+
+        .trailT1 {
+            top: -14em;
+        }
+
+        .trailT2 {
+            top: -11em;
+        }
+
+        .trailT3 {
+            top: auto;
+            bottom: -37em;
+        }
+
+        .trailT4 {
+            bottom: -40em;
+        }
+
+        .trailT5 {
+            top: 88em;
+        }
+
+        .trailT6 {
+            top: 131em;
+        }
+
+        .trailT7 {
+            // top: 12.2em;
+            top: 14.2em;
+        }
+
+        .trailT8 {
+            top: 35.5em;
+        }
+
+        .trailT9 {
+            // top: 18em;
+            top: 21em;
+        }
+
+        .about2 {
+            height: 46vh;
+        }
+
+        .stringCheese {
+            // left: 1em;
+            // bottom: -4%;
+            // top: auto;
+            // left: auto;
+            // right: 50%;
+            // width: 4.5em;
+
+            bottom: 8%;
+            top: auto;
+            left: auto;
+            right: 50%;
+            width: 5.5em;
+        }
+
+        .about1 {
+            height: 70vh;
+        }
+
+        .personalsWrap {
+            .personales {
+                // font-size: 1.8em;
+            }
+        }
+
+        .resume {
+            margin: 2em 0;
+            width: 10em;
+
+            p {
+                font-size: 1.8em;
+            }
+        }
+
+        .skillsWrap {
+            width: 100%;
+            margin: 1em 0;
+        }
+
+        .skillIcon {
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        .skillsBox {
+            // padding: 0.5em 1em 0.35em 1em;
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+    // .innerSlide{
+    //     p{
+    //         font-size: 1.25em;
+    //         line-height: normal;
+    //     }
+    // }
+
+    .slide {
+        // width: 11em;
+        width: 12em;
+    }
+
+    .innerContent {
+        .trailT6 {
+            top: 73em;
+        }
+    }
+
+    .container {
+        h3 {
+            width: 90%;
+            font-size: 2em;
+            margin: 0.35em 0;
+            margin-top: 0.5em;
+            line-height: 0.7em;
+        }
+
+        p {
+            // font-size: 1.35em;
+            line-height: 1.1em;
+        }
+
+        .threeCanvas {
+            width: 55%;
+            height: 35em;
+            // right: 2em;
+            right: 0em;
+        }
+
+        .about2Content {
+            // top: 91vh;
+
+            transform: translateY(-20%);
+        }
+
+        .about3Content {
+            transform: translateY(-7%);
+        }
+
+        .trailT3 {
+            bottom: -27em;
+        }
+
+        .trailT8 {
+            display: none;
+        }
+
+        .toolTitle1,
+        .toolTitle2 {
+            margin: 1em 0;
+        }
+
+        .personalsWrap {
+            .personales {
+                // font-size: 1.35em;
+            }
+        }
+    }
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    // My screen
+
+    .container {
+        h3 {
+            font-size: 2em;
+            margin: 0.35em 0;
+            margin-top: 0.5em;
+            line-height: 0.7em;
+        }
+    }
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .slide {
+        // width: 12em;
+        // padding: 1em;
+        width: 14em;
+        padding: 1em;
+    }
+
+    .innerSlide {
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .innerContent {
+        .trailT1,
+        .trailT2,
+        .trailT3,
+        .trailT4,
+        .trailT5,
+        .trailT6,
+        .trailT7,
+        .trailT8,
+        .trailT9,
+        .trailT10 {
+            width: 0.3em;
+            left: 20%;
+        }
+
+        .trailT1 {
+            top: -17em;
+        }
+
+        .trailT2 {
+            top: -21em;
+        }
+
+        .trailT6 {
+            top: 73em;
+        }
+    }
+
+    .container {
+        .skillsBox {
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .skillsWrap {
+            div {
+                margin-right: 0.85em;
+                margin-bottom: 0.85em;
+            }
+        }
+
+        .personalsWrap {
+            .personales {
+                // font-size: 1.5em;
+            }
+        }
+
+        .resume {
+            width: 10em;
+            padding: 1em;
+            margin: 3em 0;
+        }
+
+        .journeySlides {
+            width: 85%;
+        }
+
+        h3 {
+            font-size: 2.2em;
+            margin: 0.2em 0;
+            margin-top: 0.5em;
+            line-height: 0.7em;
+        }
+
+        p {
+            // font-size: 1.5em;
+            line-height: 1.1em;
+        }
+
+        .whiteBall {
+            width: 14em;
+            height: 14em;
+            top: 16em;
+            left: 13.5em;
+        }
+
+        .threeCanvas {
+            width: 54%;
+            height: 42em;
+            right: 0em;
+        }
+
+        .about2Content {
+            // top: 91vh;
+
+            transform: translateY(-20%);
+        }
+
+        .about3Content {
+            transform: translateY(-7%);
+        }
+
+        .trailT3 {
+            bottom: -36em;
+        }
+
+        .trailT4 {
+            bottom: -40em;
+        }
+
+        .trailT5 {
+            // bottom: -40em;
+            top: 46em;
+        }
+
+        .trailT6 {
+            top: 94em;
+        }
+
+        .trailT7 {
+            top: 16.2em;
+        }
+
+        .trailT8 {
+            display: none;
+        }
+
+        .trailT9 {
+            top: 24em;
+        }
+
+        .toolTitle1,
+        .toolTitle2 {
+            margin: 1em 0;
+        }
+
+        .personalsWrap {
+            .personales {
+                // font-size: 1.35em;
+            }
+        }
+
+        .stringCheese {
+            width: 7.5em;
+        }
+
+        .skillIcon {
+            width: 3.2em;
+            height: 3.2em;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+@import "./vars";
+
+/// MODAL
+
+.famContainer {
+    width: 100%;
+    height: 100vh;
+    // z-index: 5;
+    padding: 10% 20%;
+    position: absolute;
+
+    background: $lightestGray;
+}
+
+.awks {
+    margin: 1em 0;
+}
+
+.formRama {
+    input {
+        color: $darkestGray;
+
+        // width: 100%;
+        padding: 1em;
+        padding-bottom: 0.75em;
+        // margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+
+        font-family: "Calibre", sans-serif;
+        font-size: 1.2em;
+        line-height: normal;
+        font-weight: 400;
+        // margin: 0;
+    }
+
+    .resume {
+        background: $darkGray;
+        border-radius: 5em;
+        width: 7em;
+        // height: 2em;
+
+        // padding: 1em;
+        // padding: 0.8em 1.5em 0.7em 1.5em;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+        margin: 1em 0;
+        margin-bottom: 2em;
+
+        // margin-top: 2em;
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+
+        font-size: 1.2em;
+        color: $pureWhite;
+        line-height: normal;
+        text-align: center;
+
+        border: none;
+
+        &:hover {
+            background: $pureBlack;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+.awkJustification {
+    margin: 1em 0;
+    line-height: 1em;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.apiCall {
+    width: 6em;
+    height: 3em;
+
+    margin: 0 1em;
+}
+
+.loadingDot {
+    min-width: 1em;
+    min-height: 1em;
+    background: $pureWhite;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0em);
+    }
+    40% {
+        transform: translateY(-1em);
+    }
+    80% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+.blueX {
+    background: $blue;
+    animation: jump 1s ease-in-out 0.25s infinite;
+}
+
+.pinkX {
+    background: $magenta;
+    animation: jump 1s ease-in-out 0.5s infinite;
+}
+
+.yellowX {
+    background: $yellow;
+    animation: jump 1s ease-in-out 0.75s infinite;
+}
+
+.passcode {
+    font-size: 1em;
+    margin: 1em;
+
+    color: $magenta;
+}
+
+//
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .famContainer {
+        padding: 20% 10%;
+    }
+}
+
+//
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .famContainer {
+        padding: 20% 10%;
+    }
+
+    .formRama {
+        font-size: 2em;
+    }
+}
+
+//
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+    .famContainer {
+        padding: 20% 10%;
+    }
+
+    .formRama {
+        font-size: 2em;
+    }
+}
+
+//
+@media screen and (min-width: 1152px) and (max-width: 1365px) {
+}
+
+//
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+}
+
+// RESPONSIVITY
+@media screen and (min-width: 1920px) and (max-width: 6000px) {
+    .formRama {
+        font-size: 1.6em;
+    }
+}
