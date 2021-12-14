@@ -3,6 +3,7 @@
     "parser": "@typescript-eslint/parser",
     "plugins": ["@typescript-eslint", "no-loops", "prettier"],
     "extends": [
+        "next",
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
