@@ -1,13 +1,12 @@
 {
     "root": true,
-    "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint", "no-loops", "prettier"],
+
+    "plugins": ["no-loops"],
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "next"
+        "next/core-web-vitals"
     ],
     "rules": {
         "no-loops/no-loops": 2, // 2 means throw an ERROR

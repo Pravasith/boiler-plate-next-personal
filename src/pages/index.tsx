@@ -20,6 +20,8 @@ const Home: NextPage = () => {
                     Welcome to <a href="https://nextjs.org">Next.js!</a>
                 </h1>
 
+                <img src="www.google.com" alt="" />
+
                 <p className={styles.description}>
                     Get started by editing{" "}
                     <code className={styles.code}>pages/index.tsx</code>
