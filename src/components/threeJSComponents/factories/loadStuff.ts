@@ -10,7 +10,7 @@ import {
 
 export const loadModelsTexturesAndEnvMaps = (
     module: { GLTFLoader: new () => any; DRACOLoader: new () => any },
-    dispatch: (arg0: { type: string; percentLoaded: number }) => void
+    dispatch: (_arg0: { type: string; percentLoaded: number }) => void
 ) => {
     dispatch({
         type: "ON_PROGRESS",
@@ -56,7 +56,7 @@ export const loadModelsTexturesAndEnvMaps = (
 
     return new Promise((resolve, reject) => {
         // Loading models
-        let models: Record<string, string> = {};
+        const models: Record<string, string> = {};
 
         Object.keys(modelURLs).map(key => {
             gltfLoader.load(
@@ -95,7 +95,7 @@ export const loadModelsTexturesAndEnvMaps = (
         });
 
         // Loading textures
-        let textures: Record<string, Texture> = {};
+        const textures: Record<string, Texture> = {};
 
         Object.keys(textureURLs).map(key => {
             textureLoader.load(
@@ -119,9 +119,9 @@ export const loadModelsTexturesAndEnvMaps = (
                     }
                 },
                 // called while loading is progressing
-                xhr => {
-                    // console.log( 'Textures ' +  ( xhr.loaded / xhr.total * 100 ) + '% loaded' )
-                },
+                // xhr => {
+                //     // console.log( 'Textures ' +  ( xhr.loaded / xhr.total * 100 ) + '% loaded' )
+                // },
                 // called when loading has errors
                 error => {
                     reject({
@@ -134,7 +134,7 @@ export const loadModelsTexturesAndEnvMaps = (
         });
 
         // Loading env maps
-        let envTextures: Record<string, Texture> = {};
+        const envTextures: Record<string, Texture> = {};
 
         Object.keys(envURLs).map(key => {
             envTextureLoader.load(
@@ -159,9 +159,9 @@ export const loadModelsTexturesAndEnvMaps = (
                     }
                 },
                 // called while loading is progressing
-                xhr => {
-                    // console.log( 'Envs ' +  ( xhr.loaded / xhr.total * 100 ) + '% loaded' )
-                },
+                // xhr => {
+                //     // console.log( 'Envs ' +  ( xhr.loaded / xhr.total * 100 ) + '% loaded' )
+                // },
                 // called when loading has errors
                 error => {
                     reject({

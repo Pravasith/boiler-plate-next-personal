@@ -43,15 +43,15 @@ const Layout: React.FC = props => {
 
     // COMPONENT DID UPDATE
     useEffect(() => {
-        let w =
-            window.innerWidth ||
-            document.documentElement.clientWidth ||
-            document.body.clientWidth;
+        // let w =
+        //     window.innerWidth ||
+        //     document.documentElement.clientWidth ||
+        //     document.body.clientWidth;
 
-        let h =
-            window.innerHeight ||
-            document.documentElement.clientHeight ||
-            document.body.clientHeight;
+        // let h =
+        //     window.innerHeight ||
+        //     document.documentElement.clientHeight ||
+        //     document.body.clientHeight;
 
         setBlueBallClass(returnBallClass("Blue"));
         setPinkBallClass(returnBallClass("Pink"));

@@ -195,15 +195,15 @@ const Transition: React.FC<TransitionProps> = props => {
                     exit: TIMEOUT,
                 }}
             >
-                {status => (
+                {_status => (
                     // {children}
                     <div
-                        style={
-                            {
-                                // ...getTransitionStyles[status],
-                                // zIndex : 1
-                            }
-                        }
+                    // style={
+                    //     {
+                    //         // ...getTransitionStyles[status],
+                    //         // zIndex : 1
+                    //     }
+                    // }
                     >
                         {children}
                     </div>
