@@ -10,7 +10,7 @@ import {
 
 export const loadModelsTexturesAndEnvMaps = (
     module: { GLTFLoader: new () => any; DRACOLoader: new () => any },
-    dispatch: (_0: { type: string; percentLoaded: number }) => void
+    dispatch: ({}: { type: string; percentLoaded: number }) => void
 ) => {
     dispatch({
         type: "ON_PROGRESS",
