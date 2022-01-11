@@ -1,28 +1,17 @@
-@import "./vars";
+@import "../../assets/sass/vars";
 
 .container {
-    width: 100%;
-    // background: $lightestGray;
+    @apply w-full h-screen;
     background: $highlightColor;
-    // overflow: hidden;
-    height: 100vh;
 }
 
 .loadingContainer {
-    width: 100%;
-    height: 100vh;
-    // z-index: 5;
-
-    position: absolute;
-
+    @apply w-full h-screen absolute;
     background: $pureWhite;
 }
 
 .apiCall {
-    width: 100%;
-    height: 100%;
-
-    // margin: 0 1em;
+    @apply w-full h-screen;
 }
 
 .loadingDot {
@@ -64,49 +53,30 @@
 }
 
 .mainContainer {
-    width: auto;
+    @apply w-auto;
 }
 
 .background {
-    width: 100%;
-    // position: absolute;
-    position: fixed;
-    // overflow: hidden;
+    @apply w-full fixed;
 }
 
 .ballSack {
-    // width: 4em;
-    left: 50%;
-
-    top: 50%;
+    @apply left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-0;
     transform: translate(-50%, -50%);
-    height: 0;
-}
-
-.balls_Lol {
 }
 
 .blueBall,
 .pinkBall {
-    pointer-events: none;
-    position: absolute;
+    @apply pointer-events-none absolute object-cover left-1/2 top-1/2;
 
-    // height: 5.5em;
     width: 5.5em;
 
-    object-fit: cover;
-
     img {
-        // height: 5.5em;
         width: 5.5em;
         border-radius: 10em;
     }
 
     transform-origin: 50% 50%;
-    // transform: translateX(-40%);
-
-    left: 50%;
-    top: 50%;
 
     transition: 0.5s ease-in-out;
     transition-delay: 0.25s;
