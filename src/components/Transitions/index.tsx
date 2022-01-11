@@ -195,7 +195,7 @@ const Transition: React.FC<TransitionProps> = props => {
                     exit: TIMEOUT,
                 }}
             >
-                {_status => (
+                {() => (
                     // {children}
                     <div
                     // style={
